@@ -15,7 +15,7 @@ sh "npm install run build"
 }
 stage('archive'){
 steps{
-archiveArtifacts artifacts: '/home/vikas/folder1/workspace/nodejs-*.js'
+archiveArtifacts artifacts: '/nodejs-*.js'
 }
 }
 }
