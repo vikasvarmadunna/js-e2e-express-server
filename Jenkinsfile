@@ -10,14 +10,11 @@ url: 'https://github.com/vikasvarmadunna/js-e2e-express-server.git'
 } 
 stage('build'){
 steps{
-sh "npm install run build"
+sh "npm install" 
+sh "npm run build"
 }
 }
-stage('archive'){
-steps{
-archiveArtifacts artifacts: '/nodejs-*.js'
-}
-}
+
 }
 
 }  
